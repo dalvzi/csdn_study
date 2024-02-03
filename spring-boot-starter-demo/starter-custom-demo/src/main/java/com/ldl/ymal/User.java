@@ -1,7 +1,7 @@
-package com.ldl;
+package com.ldl.ymal;
 
 
-public class User   {
+public class User {
 
     private String username;
     private String password;

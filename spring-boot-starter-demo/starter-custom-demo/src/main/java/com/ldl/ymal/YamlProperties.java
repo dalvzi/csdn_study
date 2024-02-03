@@ -1,7 +1,6 @@
 package com.ldl.ymal;
 
 
-import com.ldl.User;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 

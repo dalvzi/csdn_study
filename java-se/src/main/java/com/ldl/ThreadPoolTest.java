@@ -40,7 +40,7 @@ public class ThreadPoolTest {
 
     //2
     @Test
-    public void test_schedule4Callable() throws Exception {
+    public void schedule4CallableTest() throws Exception {
         ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
         ScheduledFuture<String> future = service.schedule(() -> {
             try {
@@ -58,7 +58,8 @@ public class ThreadPoolTest {
     }
 
     //3
-    @Test public void test_scheduleAtFixedRate() {
+    @Test
+    public void scheduleAtFixedRateTest() {
         ScheduledExecutorService service = Executors.newScheduledThreadPool(5);
         service.scheduleAtFixedRate(() -> {
             try {
@@ -75,7 +76,8 @@ public class ThreadPoolTest {
     }
 
     // 4
-    @Test public void test_scheduleWithFixedDelay() {
+    @Test
+    public void scheduleWithFixedDelayTest() {
         ScheduledExecutorService service = Executors.newScheduledThreadPool(5);
         service.scheduleWithFixedDelay(() -> {
             try {
@@ -87,8 +89,7 @@ public class ThreadPoolTest {
         }, 1000L, 1000L, TimeUnit.MILLISECONDS);
 
         System.out.println("schedule finish time: " + format(System.currentTimeMillis()));
-        while (true) {
-        }
+        while (true) { }
     }
 
     private String format(long currentTimeMillis) {
