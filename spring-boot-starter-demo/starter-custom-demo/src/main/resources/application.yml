@@ -1,0 +1,23 @@
+mvc:
+  interceptor:
+    info: 1312312
+    show: true
+
+
+test:
+  value: ssss
+  yml:
+    name: lilili
+    list:
+      - aaaa
+      - bbbb
+      - cccc
+    users:
+      - username: a
+        password: aa
+      - username: b
+        password: bb
+
+    urls: [/api/v1/save,/api/v1/update]
+    maps: {username: lilili,age: 18}
+
